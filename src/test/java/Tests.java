@@ -5,17 +5,19 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Tests {
-    WebDriver wd;
+    WebDriver wd1;
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();
-        wd = new ChromeDriver();
-        wd.navigate().to("https://ilcarro-1578153671498.web.app/search");
+        wd1 = new ChromeDriver();
+       wd1.navigate().to("https://ilcarro-1578153671498.web.app/search");
        // wd.get("https://ilcarro-1578153671498.web.app/search");
     }
 
     @Test
-    public void testURL(){}
+    public void testURL(){
+
+    }
 
 
 }

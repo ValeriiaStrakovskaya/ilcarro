@@ -6,9 +6,6 @@ import org.testng.annotations.Test;
 
 public class Tests {
     WebDriver wd;
-
-
-
     @BeforeMethod
     public void preCondition(){
         WebDriverManager.chromedriver().setup();

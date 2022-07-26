@@ -10,8 +10,8 @@ public class Tests {
     public void preCondition(){
         WebDriverManager.chromedriver().setup();
         wd1 = new ChromeDriver();
-       wd1.navigate().to("https://ilcarro-1578153671498.web.app/search");
-       // wd.get("https://ilcarro-1578153671498.web.app/search");
+      // wd1.navigate().to("https://ilcarro-1578153671498.web.app/search");
+       wd1.get("https://ilcarro-1578153671498.web.app/search");
     }
 
     @Test

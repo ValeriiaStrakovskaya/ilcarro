@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 public class HelperBase {
     WebDriver wd;
 
+
     public HelperBase(WebDriver wd) {
         this.wd = wd;
     }
@@ -26,6 +27,14 @@ public class HelperBase {
             element.click();
             element.clear();
             element.sendKeys(text);
+        }
+    }
+
+    public void pause(int millis){
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }

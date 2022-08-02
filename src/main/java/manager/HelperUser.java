@@ -3,12 +3,7 @@ package manager;
 import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
-import java.util.Set;
 
 public class HelperUser extends HelperBase{
     public HelperUser(WebDriver wd) {
@@ -18,11 +13,11 @@ public class HelperUser extends HelperBase{
        click(By.xpath("//button[@type='submit']"));
 
     }
-    public void fillLoginForm(String email,String password) {
-        type(By.xpath("//*[@id='email']"),email);
-        type(By.xpath("//*[@id='password']"),password);
-
-    }
+//    public void fillLoginForm(String email,String password) {
+//        type(By.xpath("//*[@id='email']"),email);
+//        type(By.xpath("//*[@id='password']"),password);
+//
+//    }
 
     public void fillLoginForm(User data) {
         type(By.xpath("//*[@id='email']"), data.getEmail());
@@ -47,11 +42,23 @@ public class HelperUser extends HelperBase{
     public void clickOkButton() {
 if(isElementPresent(By.xpath("//button[contains(.,'Ok')]"))){
     click(By.xpath("//button[contains(.,'Ok')]"));
-        };
+        }
     }
 
     public boolean isButtonClickable(By locator){
-     boolean yes= wd.findElement(locator).isEnabled();
-return yes;
+        return wd.findElement(locator).isEnabled();
+
+    }
+    public void submitForm() {
+        wd.findElement(By.cssSelector("[type='submit']")).submit();
+    }
+    public void login(User user) {
+
+        openLoginForm();
+        fillLoginForm(user);
+        submitForm();
+        clickOkButton();
+        pause(1000);
+
     }
 }

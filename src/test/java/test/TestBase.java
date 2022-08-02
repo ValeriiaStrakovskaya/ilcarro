@@ -1,3 +1,5 @@
+package test;
+
 import manager.AppManager;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;

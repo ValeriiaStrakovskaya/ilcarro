@@ -58,5 +58,7 @@ public class HelperCar extends HelperBase{
     }
 
     public void attachPhoto() {
+        wd.findElement(By.id("photos")).sendKeys("/Users/valeriiastrakovskaya/Documents/GitHub/ilcarro/kia.jpeg");
+
     }
 }

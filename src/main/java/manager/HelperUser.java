@@ -28,7 +28,7 @@ public class HelperUser extends HelperBase{
     }
 
     public void openLoginForm() {
-        click(By.xpath("//*[text()=' Log in ']"));
+        click(By.xpath("*[text()=' Log in ']"));
 
     }
     public boolean isLogged(){

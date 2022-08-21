@@ -1,0 +1,8 @@
+21:45:12 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=104 in cache (valid until 22:08:08 21/08/2022 IDT)
+21:45:12 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome104=104.0.5112.79 in cache (valid until 13:07:55 22/08/2022 IDT)
+21:45:12 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+21:45:12 DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 104.0.5112.79 found in cache
+21:45:12 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/valeriiastrakovskaya/.cache/selenium/chromedriver/mac64/104.0.5112.79/chromedriver
+21:45:12 INFO  manager.AppManager - Test starts on ChromeDriver
+21:45:23 INFO  manager.NgListener - Starts of the test ----> loginPositiveTestModel
+21:45:28 INFO  manager.NgListener - Successful test ----> loginPositiveTestModel

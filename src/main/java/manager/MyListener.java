@@ -32,5 +32,10 @@ public class MyListener extends AbstractWebDriverEventListener {
         logger.info("SOMETHING WENT WRONG!!!");
         logger.info(throwable.getMessage());
         logger.info(String.valueOf(throwable.fillInStackTrace()));
+        int i= (int) ((System.currentTimeMillis()/1000)%3600);
+        String link = "src/test/resources/screenshots/screenshot - " + i + ".png";
+        HelperBase helperBase = new HelperBase(driver);
+        helperBase.takeScreenShot(link);
+        logger.info("This is a link for screenshot with error -----> " + link);
     }
 }

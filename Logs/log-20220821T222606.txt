@@ -1,0 +1,33 @@
+22:26:07 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=104 in cache (valid until 23:11:00 21/08/2022 IDT)
+22:26:07 DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome104=104.0.5112.79 in cache (valid until 13:07:55 22/08/2022 IDT)
+22:26:07 INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 104.0.5112.79 (resolved driver for Chrome 104)
+22:26:07 DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 104.0.5112.79 found in cache
+22:26:07 INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/valeriiastrakovskaya/.cache/selenium/chromedriver/mac64/104.0.5112.79/chromedriver
+22:26:07 INFO  manager.AppManager - Test starts on ChromeDriver
+22:26:14 INFO  test.TestBase - Start test------> loginPositiveTestModel
+22:26:14 INFO  manager.MyListener - Start searching element by ----->By.xpath: //*[contains(text(),' Logout ')]
+22:26:17 INFO  manager.MyListener - The element by ----->By.xpath: //*[contains(text(),' Logout ')]is found
+22:26:17 INFO  manager.MyListener - Start searching element by ----->By.xpath: *[text()=' Log in ']
+22:26:20 INFO  manager.MyListener - SOMETHING WENT WRONG!!!
+22:26:20 INFO  manager.MyListener - no such element: Unable to locate element: {"method":"xpath","selector":"*[text()=' Log in ']"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Valeriia.local', ip: '2a00:a040:19f:af12:9855:d104:77d:b7ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/8b/gf_3f8rs20b...}, goog:chromeOptions: {debuggerAddress: localhost:61483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8d890a7996e941dbf521460048c95ba
+*** Element info: {Using=xpath, value=*[text()=' Log in ']}
+22:26:20 INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"*[text()=' Log in ']"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Valeriia.local', ip: '2a00:a040:19f:af12:9855:d104:77d:b7ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/8b/gf_3f8rs20b...}, goog:chromeOptions: {debuggerAddress: localhost:61483}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8d890a7996e941dbf521460048c95ba
+*** Element info: {Using=xpath, value=*[text()=' Log in ']}
+22:26:22 INFO  manager.MyListener - This is a link for screenshot with error -----> src/test/resources/screenshots/screenshot - 1580.png
+22:26:22 INFO  manager.MyListener - Start searching element by ----->By.xpath: //button[contains(.,'Ok')]
+22:26:25 INFO  manager.MyListener - The element by ----->By.xpath: //button[contains(.,'Ok')]is found
+22:26:25 INFO  test.TestBase - ***********************

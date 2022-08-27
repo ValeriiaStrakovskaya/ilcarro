@@ -28,7 +28,7 @@ public class HelperUser extends HelperBase{
     }
 
     public void openLoginForm() {
-        click(By.xpath("*[text()=' Log in ']"));
+        click(By.xpath("//*[text()=' Log in ']"));
 
     }
     public boolean isLogged(){
@@ -106,4 +106,6 @@ click(By.xpath("//a[text()=' Sign up ']"));
         int y = rectangle.getY()+ rectangle.getHeight()*1/4;
         actions.moveByOffset(x,y).click().perform();
     }
+
+
 }

@@ -23,3 +23,8 @@ dependencies {
 test {
     useTestNG()
 }
+task regress(type: Test) {
+    useTestNG {
+        def suite = System.getProperty('suite', '')
+    }
+}
